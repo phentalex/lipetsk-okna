@@ -1,0 +1,10 @@
+:root{
+  /* Cool-tinted, low-spread shadows. Cards prefer a border over a heavy shadow. */
+  --shadow-xs:0 1px 2px rgba(26,32,38,.06);
+  --shadow-sm:0 2px 6px rgba(26,32,38,.07);
+  --shadow-md:0 6px 18px rgba(26,32,38,.09);
+  --shadow-lg:0 14px 36px rgba(26,32,38,.12);
+  --shadow-header:0 1px 0 var(--border-subtle);
+  --shadow-red:0 6px 16px rgba(227,30,36,.24);
+  --ring-focus:0 0 0 3px var(--red-200);
+}

@@ -1,0 +1,48 @@
+:root{
+  /* Brand red — from the logo. Accent only, never a full-screen fill. */
+  --red-50:#FEF6F6;--red-100:#FCE9E9;--red-200:#F9CECF;--red-300:#F4A5A7;--red-400:#ED6064;
+  --red-500:#E31E24;--red-600:#C81A20;--red-700:#AA171B;--red-800:#881216;--red-900:#660E10;
+
+  /* Cool neutrals — the colour of PVC profile. Never warm beige. */
+  --white:#FFFFFF;
+  --gray-25:#FBFCFD;--gray-50:#F6F8FA;--gray-100:#EFF2F5;--gray-200:#E3E8ED;--gray-300:#CDD5DC;
+  --gray-400:#9AA5AF;--gray-500:#6E7883;--gray-600:#5F6A75;--gray-700:#3C444C;--gray-800:#262C32;
+  --ink:#1A1A1A;
+
+  /* Semantic */
+  --success-600:#177245;--success-50:#EAF6EF;
+  --warning-600:#9A6300;--warning-50:#FDF4E3;
+  --danger-600:#AA171B;--danger-50:#FCE9E9;
+
+  /* Surfaces */
+  --surface-page:#FFFFFF;
+  --surface-subtle:var(--gray-50);
+  --surface-card:#FFFFFF;
+  --surface-tint:var(--red-50);
+  --surface-inset:var(--gray-100);
+  --surface-header:#FFFFFF;      /* header is ALWAYS light: white or --red-50 */
+  --surface-footer:var(--gray-50);
+
+  /* Text */
+  --text-primary:var(--ink);
+  --text-secondary:var(--gray-600);
+  --text-muted:var(--gray-500);
+  --text-on-red:#FFFFFF;         /* min 16px + weight 600 */
+  --text-accent:var(--red-700);  /* small red text on white — never --red-500 */
+  --text-link:var(--red-700);
+  --text-link-hover:var(--red-800);
+
+  /* Borders */
+  --border-subtle:var(--gray-200);
+  --border-default:var(--gray-300);
+  --border-strong:var(--gray-400);
+  --border-accent:var(--red-500);
+  --border-focus:var(--red-500);
+
+  /* Interactive */
+  --accent:var(--red-500);
+  --accent-hover:var(--red-600);
+  --accent-active:var(--red-700);
+  --accent-soft:var(--red-50);
+  --accent-soft-hover:var(--red-100);
+}

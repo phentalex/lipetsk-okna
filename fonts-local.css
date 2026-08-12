@@ -1,0 +1,11 @@
+/* Липецкие окна — webfonts.
+   PRODUCTION REQUIREMENT: self-host variable woff2 (cyrillic+latin subsets) in /static/fonts
+   and swap the @import below for the commented @font-face rules.
+   The @import is a stand-in used inside this design system only — see readme.md > FONT CAVEAT. */
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@300..700&family=Onest:wght@300..700&display=swap");
+
+/* Production woff2 rules live in the design system; removed here so the offline bundle has no unresolved refs. */
+
+/* Metric-matched fallbacks — prevent CLS during swap. */
+@font-face{font-family:"Geologica Fallback";src:local("Arial");size-adjust:97%;ascent-override:96%;descent-override:24%;line-gap-override:0%}
+@font-face{font-family:"Onest Fallback";src:local("Arial");size-adjust:101%;ascent-override:94%;descent-override:24%;line-gap-override:0%}

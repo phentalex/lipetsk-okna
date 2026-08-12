@@ -1,0 +1,28 @@
+:root{
+  --font-display:"Geologica","Geologica Fallback",system-ui,sans-serif;
+  --font-body:"Onest","Onest Fallback",system-ui,sans-serif;
+  /* Reserve pair if the primary families are unavailable: Unbounded + Golos Text (see readme.md). */
+
+  --weight-light:300;--weight-regular:400;--weight-medium:500;--weight-semibold:600;--weight-bold:700;
+
+  /* Scale — body never below 17px; inputs/buttons never below 16px (iOS zoom). */
+  --text-2xs:13px;--text-xs:14px;--text-sm:15px;--text-base:17px;--text-md:19px;--text-lg:21px;
+  --text-xl:24px;--text-2xl:28px;--text-3xl:34px;--text-4xl:42px;--text-5xl:52px;--text-6xl:64px;
+
+  --leading-heading:1.15;
+  --leading-snug:1.35;
+  --leading-body:1.6;
+
+  --tracking-heading:-0.02em;
+  --tracking-body:0em;
+  --tracking-caps:0.06em;
+
+  /* Semantic roles */
+  --type-h1-size:clamp(30px,6.2vw,52px);
+  --type-h2-size:clamp(25px,4.4vw,34px);
+  --type-h3-size:clamp(20px,2.6vw,24px);
+  --type-body-size:var(--text-base);
+  --type-lead-size:var(--text-md);
+  --type-caption-size:var(--text-xs);
+  --type-control-size:16px;
+}

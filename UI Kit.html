@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>UI Kit — Липецкие окна</title>
+<meta name="ext-resource-dependency" content="assets/logo-full.png" data-resource-id="logo" />
+<meta name="ext-resource-dependency" content="assets/icons/ruler.svg" data-resource-id="icon-ruler" />
+<meta name="ext-resource-dependency" content="assets/icons/blinds.svg" data-resource-id="icon-blinds" />
+<meta name="ext-resource-dependency" content="assets/icons/home.svg" data-resource-id="icon-home" />
+<meta name="ext-resource-dependency" content="assets/icons/trees.svg" data-resource-id="icon-trees" />
+<meta name="ext-resource-dependency" content="assets/icons/building-2.svg" data-resource-id="icon-building-2" />
+<meta name="ext-resource-dependency" content="assets/icons/door-open.svg" data-resource-id="icon-door-open" />
+<meta name="ext-resource-dependency" content="assets/icons/bug.svg" data-resource-id="icon-bug" />
+<meta name="ext-resource-dependency" content="assets/icons/wrench.svg" data-resource-id="icon-wrench" />
+<meta name="ext-resource-dependency" content="assets/icons/phone.svg" data-resource-id="icon-phone" />
+<meta name="ext-resource-dependency" content="assets/icons/map-pin.svg" data-resource-id="icon-map-pin" />
+<meta name="ext-resource-dependency" content="assets/icons/clock.svg" data-resource-id="icon-clock" />
+<meta name="ext-resource-dependency" content="assets/icons/shield-check.svg" data-resource-id="icon-shield-check" />
+<meta name="ext-resource-dependency" content="assets/icons/truck.svg" data-resource-id="icon-truck" />
+<meta name="ext-resource-dependency" content="assets/icons/file-text.svg" data-resource-id="icon-file-text" />
+<meta name="ext-resource-dependency" content="assets/icons/chevron-right.svg" data-resource-id="icon-chevron-right" />
+<meta name="ext-resource-dependency" content="assets/icons/chevron-down.svg" data-resource-id="icon-chevron-down" />
+<meta name="ext-resource-dependency" content="assets/icons/plus.svg" data-resource-id="icon-plus" />
+<meta name="ext-resource-dependency" content="assets/icons/minus.svg" data-resource-id="icon-minus" />
+<meta name="ext-resource-dependency" content="assets/icons/check.svg" data-resource-id="icon-check" />
+<meta name="ext-resource-dependency" content="assets/icons/arrow-right.svg" data-resource-id="icon-arrow-right" />
+<meta name="ext-resource-dependency" content="assets/icons/square.svg" data-resource-id="icon-square" />
+<script>(function(){var d={};document.querySelectorAll('meta[name="ext-resource-dependency"]').forEach(function(m){d[m.getAttribute("data-resource-id")]=m.getAttribute("content")});window.__resources=Object.assign(d,window.__resources||{})})();</script>
+<link rel="stylesheet" href="fonts-local.css">
+<link rel="stylesheet" href="_ds/design-system-52c6a758-9cca-45a7-a609-e4783194f202/tokens/colors.css">
+<link rel="stylesheet" href="_ds/design-system-52c6a758-9cca-45a7-a609-e4783194f202/tokens/typography.css">
+<link rel="stylesheet" href="_ds/design-system-52c6a758-9cca-45a7-a609-e4783194f202/tokens/spacing.css">
+<link rel="stylesheet" href="_ds/design-system-52c6a758-9cca-45a7-a609-e4783194f202/tokens/radius.css">
+<link rel="stylesheet" href="_ds/design-system-52c6a758-9cca-45a7-a609-e4783194f202/tokens/elevation.css">
+<link rel="stylesheet" href="_ds/design-system-52c6a758-9cca-45a7-a609-e4783194f202/tokens/motion.css">
+<link rel="stylesheet" href="_ds/design-system-52c6a758-9cca-45a7-a609-e4783194f202/tokens/base.css">
+<style>
+body{background:var(--white)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 var(--space-8)}
+.kit-bar{position:sticky;top:0;z-index:20;background:var(--white);border-bottom:1px solid var(--border-subtle)}
+.kit-bar .wrap{display:flex;align-items:center;gap:var(--space-6);min-height:72px}
+.caps{font-size:13px;font-weight:600;letter-spacing:var(--tracking-caps);text-transform:uppercase;color:var(--gray-500)}
+.sec{padding:var(--space-16) 0;border-top:1px solid var(--border-subtle)}
+.sec:first-of-type{border-top:none}
+.sec-head{display:grid;grid-template-columns:180px 1fr;gap:var(--space-8);margin-bottom:var(--space-10)}
+.row{display:grid;grid-template-columns:180px 1fr;gap:var(--space-8);padding:var(--space-6) 0;border-top:1px solid var(--gray-100)}
+.row:first-of-type{border-top:none}
+.spec{font-size:var(--text-2xs);color:var(--gray-500);font-family:var(--font-body)}
+.grid-auto{display:grid;gap:var(--space-4)}
+.swatch{border:1px solid var(--border-subtle);border-radius:var(--radius-md);overflow:hidden;background:var(--white)}
+.swatch .chip{height:64px}
+.swatch .meta{padding:8px 10px;display:flex;flex-direction:column;gap:2px}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12px;color:var(--gray-600)}
+.panel{background:var(--gray-50);border:1px solid var(--border-subtle);border-radius:var(--radius-lg);padding:var(--space-6)}
+.states{display:grid;grid-template-columns:120px repeat(5,1fr);gap:var(--space-4);align-items:center}
+.states .hdr{font-size:13px;letter-spacing:var(--tracking-caps);text-transform:uppercase;color:var(--gray-500);font-weight:600}
+.colgrid{display:grid;grid-template-columns:repeat(12,1fr);gap:var(--space-8)}
+.colgrid span{height:56px;background:var(--red-50);border:1px solid var(--red-100);border-radius:var(--radius-xs)}
+.ph{border:1px dashed var(--gray-300);border-radius:var(--radius-image);background:var(--gray-25);display:flex;align-items:center;justify-content:center;color:var(--gray-400);font-size:var(--text-xs)}
+a.navlink{font-size:var(--text-sm);color:var(--text-secondary);text-decoration:none}
+a.navlink:hover{color:var(--text-link-hover)}
+</style>
+</head>
+<body>
+<template id="__bundler_thumbnail" data-bg-color="#FFFFFF"><svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg"><rect width="1200" height="800" fill="#FFFFFF"/><rect x="360" y="200" width="480" height="400" rx="20" fill="#FEF6F6" stroke="#E31E24" stroke-width="16"/><rect x="586" y="200" width="28" height="400" fill="#E31E24"/><rect x="360" y="386" width="480" height="28" fill="#E31E24"/></svg></template>
+<div id="app"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="_ds/design-system-52c6a758-9cca-45a7-a609-e4783194f202/_ds_bundle.js"></script>
+<script src="image-slot.js"></script>
+<script type="text/babel" src="kit-ui.jsx"></script>
+<script>(function(){function fix(root){(root.querySelectorAll?root.querySelectorAll('[style*="lucide-static"]'):[]).forEach(function(el){var m=/icons\/([a-z0-9-]+)\.svg/.exec(el.getAttribute("style")||"");if(!m)return;var u=window.__resources&&window.__resources["icon-"+m[1]];if(!u||u.indexOf("lucide-static")>-1)return;el.style.webkitMaskImage='url("'+u+'")';el.style.maskImage='url("'+u+'")'})}var t=null;new MutationObserver(function(){clearTimeout(t);t=setTimeout(function(){fix(document)},50)}).observe(document.documentElement,{childList:true,subtree:true,attributes:true,attributeFilter:["style"]});setTimeout(function(){fix(document)},300)})();</script>
+</body>
+</html>
