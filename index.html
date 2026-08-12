@@ -32,15 +32,12 @@
 a{color:var(--text-link)}a:hover{color:var(--text-link-hover)}
 header a[aria-label^="Липецкие окна"]{flex:none;padding-right:var(--space-2)!important}
 header a[aria-label^="Липецкие окна"] img{max-width:none;width:auto;flex:none;height:34px!important}
-header>div:first-child>nav{margin-left:0!important}
 header>div:first-child>nav ul{gap:var(--space-3)!important}
 header>div:first-child>nav a{font-size:var(--text-xs)!important}
 header>div:first-child a[href^="tel:"]{font-size:var(--text-base)!important}
 /* Сдвиг строки шапки влево: меняйте одно число ниже (например 0px, 24px, 48px) */
-:root{--header-shift:0px}
-header>div:first-child{padding:var(--space-4) 0!important;max-width:var(--container-max)!important;width:auto!important;margin:12px 0!important;justify-content:center;transform:translateX(calc(-1 * var(--header-shift)))}
-header>div:first-child>a[aria-label^="Липецкие окна"] img{margin-left:55px}
-header>div:first-child>div:last-child{margin-left:60px!important}
+header>div:first-child{display:flex!important;align-items:center;gap:var(--space-6);padding:var(--space-4) var(--space-8)!important;max-width:var(--container-max)!important;width:100%!important;margin:12px auto!important;justify-content:space-between!important}
+header>div:first-child>nav{margin:0 auto!important}
 footer>div{padding-left:var(--space-8)!important;padding-right:var(--space-8)!important}
 footer a[aria-label^="Липецкие окна"] img{max-width:none;width:auto}
 @media(max-width:900px){
